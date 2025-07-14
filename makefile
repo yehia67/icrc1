@@ -15,8 +15,8 @@ docs:
 
 actor-test: dfx-cache-install
 	-dfx start --background
-	dfx deploy test
-	dfx ledger fabricate-cycles --canister test
+	DFX_MOC_PATH=$(shell mocv bin 0.10.2)/moc dfx deploy test
+	dfx ledger fabricate-cycles --canister test --amount 1
 	dfx canister call test run_tests
 
 ref-test:
