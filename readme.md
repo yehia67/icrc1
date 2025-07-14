@@ -87,6 +87,10 @@ This repo contains the implementation of the
 ## Tests
 #### Internal Tests
 - Download and Install [vessel](https://github.com/dfinity/vessel)
+- install [mocv](https://github.com/ZenVoich/mocv)
+```
+npm -i -g mocv@0.10.2
+```
 - Run `make test` 
 - Run `make actor-test`
 
